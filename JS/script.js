@@ -80,9 +80,8 @@ const makeDefaultAllPost=(data , isSortByPrice=false )=>{
         allPostContainer.classList.add("flex-col")
         allPostContainer.innerHTML=`
         <img src="./images/error.webp" alt="">
-        <h2 class="text-3xl font-semibold">No Information Aviable </h2>
-        <p class="w-10/12 text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at 
-          its layout. The point of using Lorem Ipsum is that it has a.</p>
+        <h2 class="text-3xl font-semibold">No Information Available </h2>
+        <p class="w-10/12 text-center">There is no post available in this moment in this category try another categories animal for adoption </p>
         `
 
     }

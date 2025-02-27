@@ -76,19 +76,22 @@
         </h1>
         <p class="max-w-3xl text-xl text-center">
           Start your journey to find your new best friend. We have a wide
-          selection of pets available for adoption. We are dedicated to finding a
-          loving home for every pet.
+          selection of pets available for adoption. We are dedicated to finding
+          a loving home for every pet.
         </p>
         <button class="btn btn-active btn-accent">View More</button>
         <img src="./images/pet.webp" alt="" />
       </section>
-        <!-- adoption section here -->
+      <!-- adoption section here -->
       <section class="bestdeal mt-10 min-h-screen">
         <h1 class="text-5xl font-bold text-black text-center">
-          Adopt Your Best Friend    
+          Adopt Your Best Friend
         </h1>
         <p class="text-1xl mt-6 max-w-6xl mx-auto text-center">
-         It is our duty to provide a safe and loving environment for all animals. We are committed to finding the best homes for our pets. We are dedicated to providing the best possible care for our animals. and we want to make sure that they are happy and healthy.
+          It is our duty to provide a safe and loving environment for all
+          animals. We are committed to finding the best homes for our pets. We
+          are dedicated to providing the best possible care for our animals. and
+          we want to make sure that they are happy and healthy.
         </p>
         <div
           id="catagoryContainer"
@@ -111,31 +114,77 @@
           <div>
             <div
               id="imagecontainer"
-              class="border-gray-300 p-7 rounded-xl border-2   justify-center items-center grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 p-2 gap-2"
+              class="border-gray-300 p-7 rounded-xl border-2 justify-center items-center grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 p-2 gap-2"
             ></div>
           </div>
         </div>
       </section>
-      <section id="modal1" >
-      </section>
+      <section id="modal1"></section>
       <section class="modal2">
-        
-    <!-- Modal -->
-    <dialog id="countdownModal" class="modal">
-      <div class="modal-box text-center">
-          <img class="w-14 mx-auto" src="./images/handShake.gif" alt="">
-          <h2 class="font-bold text-4xl ">🎉 Congratulations! 🎉</h2>
-          <p class="mt-2 text-lg">You have successfully adopted a pet!</p>
-          <div class="mt-4">
+        <!-- Modal -->
+        <dialog id="countdownModal" class="modal">
+          <div class="modal-box text-center">
+            <img class="w-14 mx-auto" src="./images/handShake.gif" alt="" />
+            <h2 class="font-bold text-4xl">🎉 Congratulations! 🎉</h2>
+            <p class="mt-2 text-lg">You have successfully adopted a pet!</p>
+            <div class="mt-4">
               <h1 id="countdown" class="text-center text-5xl">3</h1>
+            </div>
           </div>
-      </div>
-  </dialog>
-
+        </dialog>
       </section>
-      
     </main>
-    <footer></footer>
+    <footer class=" bg-black">
+      <div class="footer w-11/12 mx-auto justify-between text-neutral-content p-10">
+        <nav>
+          <div class="flex justify-start items-center gap-2"> <img class="w-8" src="./images/logo.webp" alt=""><h6 class=" text-3xl footer-title">Peddy</h6></div>
+          <p class="  link link-hover">Location: av. Washington 165, NY CA 54003
+          </p>
+          <p class="link link-hover">Phone: +31 85 964 47 25
+          </p>
+          <p class="link link-hover">Email: info@yourdomain.com
+          </p>
+          <p class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</p>
+          <nav class="flex  gap-4">
+            <a ">
+              <img width="24" src="./images/facebook.png" alt="">
+            </a>
+            <a class="text-red-700">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <img width="24" src="./images/x.png" alt="">
+            </a>
+            <a>
+              <img width="24" src="./images/insta.png" alt="">
+            </a>
+          </nav>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Home</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Animals</a>
+          <a class="link link-hover">Foundation</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Drop a Message</h6>
+          <input type="text" placeholder="Enter your email" class="input w-full font-bold bg-gray-800 input-bordered input-md w-full max-w-xs" />
+          <button class="btn btn-active btn-accent text-white font-bold w-full">Subscribe</button>
+          
+        </nav>
+      </div>
+    </footer>
+
+
     <script src="./JS/script.js"></script>
   </body>
 </html>
