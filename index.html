@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B10A6</title>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <!-- tailwind and daisy ui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body class="font-[Lato]">
+    <header>
+      <nav class="w-11/12 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <a class="btn btn-ghost text-xl">
+                  <img class="h-8" src="./images/logo.webp" alt="" /> Peddy</a
+                >
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost text-2xl h-8 hidden md:flex justify-center items-center gap-2"
+            >
+              <img class="h-full" src="./images/logo.webp" alt="" /> Peddy</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-2xl">
+              <li><a>Home</a></li>
+              <li>
+                <a>Shop</a>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn"><i class="fa-regular fa-user text-2xl"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-11/12 mx-auto">
+      <section class="banner flex flex-col justify-center items-center gap-5">
+        <h3 class="lg:text-3xl text-2xl">
+          <span class="text-[#13131399]">Bringing Families Together</span>🔥
+        </h3>
+        <h1 class="max-w-3xl lg:text-7xl text-4xl text-center font-black">
+          Your Path to Adoption Starts Here
+        </h1>
+        <p class="max-w-3xl text-xl text-center">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+        <button class="btn btn-active btn-accent">View More</button>
+        <img src="./images/pet.webp" alt="" />
+      </section>
+      <!-- <section class="adopt max-h-screen">
+          <h1 class="text-5xl font-bold text-black text-center ">Adopt Your Best Friend</h1>
+          <p class="text-1xl mt-6 max-w-6xl mx-auto text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+          <div id="catagoryContainer" class="buttons flex justify-between items-center mt-5">
+          </div>
+          </section> -->
+      <section class="bestdeal mt-10 min-h-screen">
+        <h1 class="text-5xl font-bold text-black text-center">
+          Adopt Your Best Friend    
+        </h1>
+        <p class="text-1xl mt-6 max-w-6xl mx-auto text-center">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+        <div
+          id="catagoryContainer"
+          class="buttons flex justify-between items-center mt-5"
+        ></div>
+        <div class="mt-5 flex justify-between items-center">
+          <h1 class="text-2xl text-black font-bold">Best Deal For You</h1>
+          <button
+            id="sortByPrice"
+            class="btn bg-[#0E7A81] text-white h-8 text-xl hover:text-black hover:bg-transparent"
+          >
+            Sort By Price
+          </button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 mt-8 gap-9 justify-center">
+          <div
+            id="cardContainer"
+            class="border-gray-300 p-7 rounded-xl border-2 justify-center items-center gap-2 col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          ></div>
+          <div>
+            <div
+              id="imagecontainer"
+              class="border-gray-300 p-7 rounded-xl border-2   justify-center items-center grid grid-cols-3 md:grid-cols-6 lg:grid-cols-2 p-2 gap-2"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section id="modal1" >
+      </section>
+      <section class="modal2">
+        
+    <!-- Modal -->
+    <dialog id="countdownModal" class="modal">
+      <div class="modal-box text-center">
+          <img class="w-14 mx-auto" src="./images/handShake.gif" alt="">
+          <h2 class="font-bold text-4xl ">🎉 Congratulations! 🎉</h2>
+          <p class="mt-2 text-lg">You have successfully adopted a pet!</p>
+          <div class="mt-4">
+              <h1 id="countdown" class="text-center text-5xl">3</h1>
+          </div>
+      </div>
+  </dialog>
+
+      </section>
+      
+    </main>
+    <footer></footer>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

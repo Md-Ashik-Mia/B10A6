@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+
+    <!-- Button to Open Modal -->
+    <button onclick="openModal()" class="btn btn-primary">Adopt a Pet</button>
+
+    <!-- Modal -->
+    <dialog id="countdownModal" class="modal">
+        <div class="modal-box text-center">
+            <h2 class="font-bold text-xl">🎉 Congratulations! 🎉</h2>
+            <p class="mt-2 text-lg">You have successfully adopted a pet!</p>
+            <div class="mt-4">
+                <span class="countdown font-mono text-6xl">
+                    <span id="countdown">3</span> <!-- Updating text directly -->
+                </span>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        function openModal() {
+            const modal = document.getElementById("countdownModal");
+            const countdownEl = document.getElementById("countdown");
+            let counter = 3;
+
+            modal.showModal(); // Show modal
+
+            const interval = setInterval(() => {
+                countdownEl.textContent = counter; // Update text content
+                counter--;
+
+                if (counter < 0) {
+                    clearInterval(interval);
+                    modal.close(); // Close modal after countdown
+                }
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
